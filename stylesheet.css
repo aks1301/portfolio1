@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 97px;
+    background-color: rgb(24, 63, 63);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav ul li a:hover {
+    color: rgb(9, 16, 16);
+    font-size: 1.2rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.firstsection {
+    background-color: rgb(0, 0, 33);
+}
+
+.firstsection .leftsection {
+    font-size: 2rem;
+}
+
+.firstsection .rightsection img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    animation: sparkle 2s infinite alternate;
+    transition: transform 0.3s;
+}
+
+.firstsection .rightsection img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes sparkle {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.sp {
+    color: aqua;
+}
+
+#element {
+    color: rgb(8, 120, 120);
+}
+
+.secondsection {
+    background-color: rgb(24, 63, 63);
+    width: 100%;
+}
+
+.secondsection .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.secondsection .vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 0 5%;
+    text-align: center;
+}
+
+.secondsection .vertical img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.secondsection .vertical-title {
+    width: 25vw;
+    font-size: 1.5rem;
+}
+
+.secondsection .vertical-title1 {
+    width: 25vw;
+    font-size: 1.5rem;
+}
+
+.secondsection .vertical-dsc {
+    width: 20vw;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    padding: 10px;
+    margin-top: 10px;
+    animation: shadow 2s infinite alternate;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 5px 5px 10px rgba(232, 236, 235, 0.5);
+    }
+    50% {
+        box-shadow: 10px 10px 20px rgba(223, 7, 43, 0.7);
+    }
+    100% {
+        box-shadow: 5px 5px 10px rgba(5, 148, 244, 0.5);
+    }
+}
+
+.git {
+    padding: 5px;
+    width: 10vw;
+    background-color: black;
+    color: azure;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.git:hover {
+    background-color: rgb(120, 29, 218);
+}
+
+.thirdsection {
+    background-color: rgb(0, 0, 33);
+    padding: 20px;
+}
+
+.thirdsection .skill {
+    text-align: center;
+}
+
+.thirdsection h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.thirdsection hr {
+    margin: 20px auto;
+    width: 50%;
+    border: 1px solid white;
+}
+
+.thirdsection .technical,
+.thirdsection .soft {
+    margin: 20px 0;
+}
+
+.thirdsection .technical h3,
+.thirdsection .soft h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: aquamarine;
+}
+
+.thirdsection .technical ul,
+.thirdsection .soft ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.thirdsection .technical li,
+.thirdsection .soft li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.thirdsection .technical li::before,
+.thirdsection .soft li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: aquamarine;
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+}
+
+.contactsection {
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-details {
+    flex: 1;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.contact-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-details ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-details li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+.contact-details a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-details a:hover {
+    color: #F39C12;
+}
+
+.copy {
+    flex: 1;
+    text-align: right;
+}
+
+.copy p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.copy p:before {
+    content: "\00a9";
+    font-size: 1rem;
+    margin-right: 5px;
+}
+
+
+/* Tablets and small desktops */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    nav {
+        height: auto;
+        padding: 10px 0;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    .left {
+        font-size: 1.3rem;
+    }
+    .section {
+        padding: 40px;
+    }
+    .firstsection .leftsection {
+        font-size: 1.8rem;
+    }
+    .firstsection .rightsection img {
+        max-width: 250px;
+    }
+    .secondsection .box {
+        width: 90%;
+    }
+    .secondsection .vertical {
+        margin: 10px 0;
+    }
+    .secondsection .vertical img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+    }
+    .secondsection .vertical-title {
+        width: 30vw;
+        font-size: 1.3rem;
+    }
+    .secondsection .vertical-dsc {
+        width: 25vw;
+        font-size: 1.3rem;
+    }
+    .git {
+        width: 20vw;
+        font-size: 18px;
+    }
+    .thirdsection .skill {
+        padding: 20px;
+    }
+    .thirdsection h2 {
+        font-size: 2rem;
+    }
+    .thirdsection hr {
+        width: 50%;
+        margin: 20px auto;
+    }
+    .thirdsection .technical li,
+    .thirdsection .soft li {
+        font-size: 1.2rem;
+    }
+    .contactsection {
+        padding: 30px 0;
+    }
+    .contact-details h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    .copy p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Mobile devices (portrait and landscape) */
+
+@media only screen and (max-width: 600px) {
+    nav {
+        height: auto;
+        padding: 10px 0;
+    }
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    .left {
+        font-size: 1.2rem;
+    }
+    .section {
+        padding: 20px;
+    }
+    .firstsection .leftsection {
+        font-size: 1.5rem;
+    }
+    .firstsection .rightsection img {
+        max-width: 200px;
+    }
+    .secondsection .box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .secondsection .vertical {
+        margin: 20px 0;
+    }
+    .secondsection .vertical img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .secondsection .vertical-title {
+        width: auto;
+        font-size: 1rem;
+    }
+    .secondsection .vertical-dsc {
+        width: auto;
+        font-size: 1rem;
+    }
+    .git {
+        width: 30vw;
+        font-size: 16px;
+    }
+    .thirdsection .skill {
+        padding: 10px;
+    }
+    .thirdsection h2 {
+        font-size: 1.5rem;
+    }
+    .thirdsection hr {
+        width: 70%;
+        margin: 10px auto;
+    }
+    .thirdsection .technical li,
+    .thirdsection .soft li {
+        font-size: 1rem;
+    }
+    .contactsection {
+        padding: 20px 0;
+    }
+    .contact-details h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    .copy p {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somnath-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .contact-details i {
+            color: #4CAF50;
+            /* Default color for all icons, can be overridden individually */
+        }
+        
+        .contact-details .fa-envelope {
+            color: #D44638;
+            /* Gmail red color */
+        }
+        
+        .contact-details .fa-phone-alt {
+            color: #4CAF50;
+            /* Phone icon green color */
+        }
+        
+        .contact-details .fa-linkedin {
+            color: #0077B5;
+            /* LinkedIn blue color */
+        }
+        
+        .contact-details .fa-github {
+            color: #333;
+            /* GitHub dark color */
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Somnath's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="Somnath_Updated_Resume.pdf">Resume</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="About" class="firstsection section">
+            <div class="leftsection">
+                Hi! my name is <span class="sp">Somnath</span>
+                <div>I am a Passionate</div>
+                <span id="element"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="img/sss.jpeg" alt="">
+
+
+            </div>
+
+
+
+        </section>
+        <section id="project" class="secondsection section">
+            <span class="project">What I have created so far?</span>
+            <h1 style="color: aquamarine;">Projects</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="img/—Pngtree—3d illustration of character website_13029763.png" alt="E-commerce website">
+                    <div class="vertical-title"><span id="element1"></span></div>
+                    <div class="vertical-dsc">Created an E-commerce website similar to Flipkart, showcasing comprehensive web development skills. showcasing comprehensive web development skills.
+
+
+
+                    </div>
+                    <a href="https://github.com/aks1301/aapna-bazar" target="_blank">
+                        <button class="git">GitHub</button>
+                    </a>
+                </div>
+                <div class="vertical">
+                    <img src="img/—Pngtree—3d illustration of character website_13029763.png" alt="Portfolio">
+                    <div class="vertical-title1">Portfolio</div>
+                    <div class="vertical-dsc">Developed and published a personal portfolio website to showcase my skills, projects, and experience.</div>
+                    <a href="https://github.com/aks1301/aapna-bazar" target="_blank">
+                        <button class="git">GitHub</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="thirdsection section">
+            <div class="skill">
+                <h2>What skills I have</h2>
+                <hr>
+                <div class="technical">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Programming: C, C++</li>
+                        <li>Web Development: HTML, CSS, Bootstrap, Angular, Java-Script</li>
+                        <li>Database Management: SQL, MongoDB</li>
+                        <li>Version Control: Git, GitHub</li>
+                    </ul>
+                </div>
+                <div class="soft">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Effective Communication</li>
+                        <li>Team Collaboration</li>
+                        <li>Problem-Solving</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact" class="contactsection">
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-details">
+                    <h2>Contact Me</h2>
+                    <ul>
+
+                        <li><i class="fas fa-envelope"></i> Email: <a href="mailto:somnathk667@gmail.com">somnathk667@gmail.com</a></li>
+                        <li><i class="fas fa-phone-alt"></i> Phone: <a href="tel:+918406935096">+91 8406935096</a></li>
+                        <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/somnath-deshmukh/" target="_blank">linkedin.com/in/somnath</a></li>
+                        <li><i class="fab fa-github"></i> GitHub: <a href="https://github.com/aks1301" target="_blank">github.com/somnath</a></li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p>&copy; 2024 Somnath Portfolio. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Front-End Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        var typed = new Typed('#element1', {
+            strings: ['First project.', 'Aapna-Bazar'],
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+
+</html>
